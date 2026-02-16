@@ -32,6 +32,10 @@ build/
 # Android
 android/.gradle/
 android/local.properties
+**/android/local.properties
+
+# IDE
+*.iml
 
 # iOS / macOS (if generated later)
 ios/Pods/
@@ -45,4 +49,3 @@ macos/Flutter/Flutter.podspec
 # Windows / Linux (if generated later)
 windows/flutter/ephemeral/
 linux/flutter/ephemeral/
-
