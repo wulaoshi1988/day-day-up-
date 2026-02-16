@@ -1,0 +1,42 @@
+name: capy_study_app
+description: Capybara-themed study check-in MVP for primary students and parents.
+publish_to: 'none'
+version: 0.1.0+1
+
+environment:
+  sdk: '>=3.4.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_riverpod: ^2.5.1
+  dio: ^5.7.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  flutter_launcher_icons: ^0.14.3
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/icons/app/
+    - assets/icons/nav/
+    - assets/icons/plan/
+    - assets/icons/growth/
+    - assets/icons/parent/
+    - assets/icons/status/
+    - assets/icons/ICON_SPEC.md
+
+flutter_launcher_icons:
+  image_path: "web/icons/Icon-512.png"
+  android: true
+  ios: true
+  web:
+    generate: true
+    image_path: "web/icons/Icon-512.png"
+    background_color: "#C98F65"
+    theme_color: "#C98F65"
+  adaptive_icon_background: "#FFF8F0"
+  adaptive_icon_foreground: "web/icons/Icon-maskable-512.png"
