@@ -196,8 +196,16 @@ class PlannerPage extends ConsumerWidget {
                                 Container(
                                   padding: const EdgeInsets.all(12),
                                   decoration: BoxDecoration(
-                                    color: Colors.white.withValues(alpha: 0.2),
+                                    // Match the capybara icon palette (used across app icons).
+                                    color: const Color(0xFFC98F65),
                                     borderRadius: BorderRadius.circular(16),
+                                    boxShadow: [
+                                      BoxShadow(
+                                        color: Colors.black.withValues(alpha: 0.12),
+                                        blurRadius: 14,
+                                        offset: const Offset(0, 6),
+                                      ),
+                                    ],
                                   ),
                                   child: Image.asset(
                                     'assets/icons/app/capy_hero_meditation.png',
